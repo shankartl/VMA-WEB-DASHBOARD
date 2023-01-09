@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Intel";
+  src: local("Intel"), url("./fonts/Intel/IntelOneDisplayRegular.ttf");
+  font-weight: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Intel", "Ubuntu", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+*:focus {
+  box-shadow: none !important;
+}
+
+/* Center Aligning AGGrid */
+.ag-row .ag-cell {
+  display: flex;
+  align-items: center;
+}
+
+.ag-theme-alpine .ag-header {
+  font-family: "Intel", "Ubuntu", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+.ag-theme-alpine .ag-root-wrapper {
+  border: none !important;
+  border-radius: 0.5em !important;
+}
+
+.ag-theme-alpine .ag-row {
+  border-bottom: 1px solid #ededed !important;
+  border-right: 0px !important;
+  border-left: 0px !important;
+  font-family: "Intel", "Ubuntu", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans;
+}
+
+.swal2-confirm {
+  border: 2px solid #065baa !important;
+  border-radius: 0.5em !important;
+  color: #ffffff !important;
+}
+
+.swal2-cancel {
+  background-color: transparent !important;
+  border: 2px solid #065baa !important;
+  border-radius: 0.5em !important;
+  color: #065baa !important;
+}
+
+.checkmark {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 2s ease-in-out;
+  -webkit-animation: dash 2s ease-in-out;
+}
+
+.spin {
+  animation: spin 2s;
+  -webkit-animation: spin 2s;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+.apexcharts-toolbar {
+  display: none !important;
+}
+.css-tforvw[aria-selected="true"],
+.css-tforvw[data-selected],
+.css-yev60l[aria-selected="true"],
+.css-yev60l[data-selected],
+.css-gpybqo[aria-selected="true"],
+.css-gpybqo[data-selected],
+.css-1a917nx[aria-selected="true"],
+.css-1a917nx[data-selected] {
+  color: #eb5a3c !important;
+  border-color: currentColor;
+}
+
+.ag-row-hover .ag-cell.ag-cell-not-inline-editing.ag-cell-normal-height.ag-cell-value .viewBtn {
+  /* background-color: red !important; */
+  display: block;
+}
+.ag-cell.ag-cell-not-inline-editing.ag-cell-normal-height.ag-cell-value .viewBtn {
+  display: none;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.ag-body-viewport {
+  overflow-y: scroll;
+  max-height: 500px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
